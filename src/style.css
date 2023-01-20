@@ -1,0 +1,82 @@
+
+
+.contain{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.header{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    position: relative;
+}
+
+.menu{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+    z-index: 5;
+}
+.menu>div{
+  
+    width: 30px;
+    height: 5px;
+    background-color: #000;
+}
+.navi{
+width: 300px;
+height: 100vh;
+position: fixed;
+left: 0px;
+background-color: #fff;
+transition: all .3s;
+z-index: 100;
+}
+.closenavi{
+height: 100vh;
+left: -300px;
+transition: all .3s;
+position: absolute;
+}
+.logo{
+    position: absolute;
+    left: 50px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 900;
+}
+.navi ul{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.navimenu{
+    position: relative;
+    padding: 10px;
+}
+.navimenu a{
+    color: grey;
+}
+.navimenu .active {
+    color: #000;
+    font-weight: 900;
+}
+.wrap1200{
+    width: 1200px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .wrap1200{
+     
+        padding: 20px;
+    }
+}
